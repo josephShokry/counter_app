@@ -1,0 +1,109 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+  }
+  
+  .counter-section {
+    background-color: #3a3f4b;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .counter-display {
+    margin-bottom: 30px;
+  }
+  
+  .counter-value {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #61dafb;
+    text-shadow: 0 0 10px rgba(97, 218, 251, 0.5);
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .increment-btn, .reset-btn, .refresh-btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .increment-btn {
+    background-color: #61dafb;
+    color: #282c34;
+  }
+  
+  .increment-btn:hover {
+    background-color: #21a9c7;
+    transform: translateY(-2px);
+  }
+  
+  .reset-btn {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  .reset-btn:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+  }
+  
+  .refresh-btn {
+    background-color: #4ecdc4;
+    color: white;
+  }
+  
+  .refresh-btn:hover {
+    background-color: #45b7aa;
+    transform: translateY(-2px);
+  }
+  
+  .increment-btn:disabled,
+  .reset-btn:disabled,
+  .refresh-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .error-message {
+    color: #ff6b6b;
+    background-color: #ffe0e0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .button-group {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .increment-btn, .reset-btn, .refresh-btn {
+      width: 200px;
+    }
+  }
